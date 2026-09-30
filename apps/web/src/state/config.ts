@@ -214,6 +214,7 @@ export const KNOWN_PROVIDERS: KnownProvider[] = [
     preferredModels: [
       'anthropic/claude-sonnet-4.6',
       'anthropic/claude-sonnet-4.5',
+      'anthropic/claude-opus-latest',
       'google/gemini-2.5-flash',
       'google/gemini-2.5-pro',
       'openai/gpt-4o',

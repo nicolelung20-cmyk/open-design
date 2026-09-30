@@ -647,6 +647,15 @@ async function pickProvider(projectRoot, dataDir, chatAgentId, chatProvider, cha
       credentialSource: 'env',
     };
   }
+  if (process.env.OPENROUTER_API_KEY) {
+    return {
+      kind: 'openai',
+      apiKey: process.env.OPENROUTER_API_KEY,
+      model: envOverrideModel || 'anthropic/claude-opus-latest',
+      baseUrl: 'https://openrouter.ai/api/v1',
+      credentialSource: 'env',
+    };
+  }
   // Fallback: reuse the OpenAI key the user already configured for media
   // generation. Most Local-CLI Claude users don't have an
   // ANTHROPIC_API_KEY in the daemon's environment (Claude Code logs in
