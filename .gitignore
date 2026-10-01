@@ -58,6 +58,8 @@ apps/desktop/vendor/dom-to-pptx/dom-to-pptx.bundle.js
 !.claude/skills/
 .claude/skills/*
 !.claude/skills/od-contribute/
+!.claude/settings.json
+!.claude/hooks/
 !.claude/commands/
 .claude/commands/*
 !.claude/commands/od-contribute.md
